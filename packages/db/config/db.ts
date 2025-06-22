@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
 export async function connectToDB() {
+  dotenv.config();
   const mongoUrl = process.env.MONGO_URL;
   if (!mongoUrl) {
-    throw new Error('MONGO_URL not set in environment');
+   console.error('❌ MONGO_URL not found in environment variables');
+  process.exit(1);
   }
 
   try {

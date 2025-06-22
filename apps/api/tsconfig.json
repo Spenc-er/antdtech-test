@@ -5,5 +5,5 @@
     "outDir": "./dist"
   },
   "exclude": ["node_modules"],
-  "include": [".", "../../packages/db/scripts"]
+  "include": [".", "../../packages/db/scripts", "../../packages/db/config"]
 }
