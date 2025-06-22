@@ -6,12 +6,15 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "check-types": "turbo run check-types",
+    "seed": "tsx packages/db/scripts/seed.ts"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
     "turbo": "^2.5.4",
-    "typescript": "5.8.2"
+    "typescript": "^5.8.3"
   },
   "engines": {
     "node": ">=18"
@@ -20,5 +23,13 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@tanstack/react-router": "^1.121.27",
+    "@trpc/server": "^11.4.2",
+    "dotenv": "^16.5.0",
+    "mongoose": "^8.16.0",
+    "shadcn-ui": "^0.9.5",
+    "zod": "^3.25.67"
+  }
 }
