@@ -10,11 +10,13 @@
     "seed": "tsx packages/db/scripts/seed.ts"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.6.0",
     "prettier": "^3.5.3",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
     "turbo": "^2.5.4",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
   },
   "engines": {
     "node": ">=18"
@@ -25,7 +27,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "@tanstack/react-router": "^1.121.27",
+    "@tanstack/react-router": "^1.121.34",
     "@trpc/server": "^11.4.2",
     "dotenv": "^16.5.0",
     "mongoose": "^8.16.0",
