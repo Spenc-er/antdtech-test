@@ -1,17 +1,15 @@
 {
-  "extends": "../../packages/typescript-config/base.json",
-  "compilerOptions": {
-     "allowImportingTsExtensions": true,
-      "noEmit": true,
-    "plugins": [
-    ],
-    "jsx": "react-jsx"
-  },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    }
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "compilerOptions": {
+    "allowImportingTsExtensions": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }
